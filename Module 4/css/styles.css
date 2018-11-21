@@ -23,7 +23,6 @@ img {
 .container {
     width: 1140px;
     margin: 0 auto;
-    margin-bottom: 46px;
     padding: 0 15px;
 
 }
@@ -89,23 +88,18 @@ li.menu-blog {
     line-height: 14px;
 }
 
-a.menu-link-home {
-    color: #1ABC9C;
-    line-height: 14px;
-}
-
 .site-navigation a:hover,
 .site-navigation a:focus {
-    color: #BC1A4A;
+    color: #1ABC9C;
 }
 
 /* PRODUCTS SECTION */
 .products {
-    padding-bottom: 31px;
+    padding-bottom: 102px;
 }
 .headline {
     font-size: 38px;
-    margin-top: 0;
+    margin: 0 auto;
     line-height: 40px;
     text-align: center;
     color: #505050;
@@ -119,8 +113,8 @@ a.menu-link-home {
     content: '';
     display: block;
     background: #1ABC9C;
-    vertical-align: middle;
-    margin: 30px auto 92px;
+
+    margin: 30px auto 91px;
     width: 15%;
     height: 7px;
    }
@@ -141,6 +135,7 @@ a.menu-link-home {
     float: left;
     width: 255px;
     margin-right: 30px;
+    margin-bottom: 30px;
     padding: 0;
     text-align: center;
     text-transform: uppercase;
@@ -183,9 +178,7 @@ a.menu-link-home {
     margin: 0;
 }
 
-.products-list {
-    margin-bottom: 104px;
-}
+
 
 .products-list-item:hover .products-list-name {
     background: #1ABC9C;
@@ -197,6 +190,10 @@ a.menu-link-home {
 
 
 /* NEWS SECTION */
+.news {
+    padding-bottom: 46px;
+}
+
 .news-list {
     text-decoration: none;
     margin: 0;
@@ -217,6 +214,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .news-list-title {
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 .news-list-img {
@@ -227,20 +225,20 @@ font-family: 'Roboto Condensed', sans-serif;
     content: '';
     display: block;
     background: #1ABC9C;
-    margin: 14px auto 28px 0;
+    margin: 0;
+    margin-top: 14px;
+    margin-right: 214px;
     width: 39%;
     height: 3px;
    }
 
 .news-list-text {
-    margin: 0 auto;
+    margin: 0 auto 18px;
 }
 
     .news-button {
     border: none;
     margin: 0;
-    margin-right: 220px;
-    margin-top: 19px;
     padding: 19px 40px;
     min-width: 160px;
     min-height: 51px;
