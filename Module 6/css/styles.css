@@ -243,7 +243,6 @@ img {
         justify-content: space-between;
         margin: 0;
         padding: 0;
-        /* margin-bottom: 86px; */
     }
 
     .team-list-item {
@@ -254,13 +253,16 @@ img {
     }
 
     .team-img-wrp {
-        height: 470px;
         position: relative;
+        overflow: hidden;
+    }
+
+    .img-container {
+        height: 470px;
     }
 
     .team-modal {
         position: absolute;
-        /* background-color: transparent; */
         opacity: 0;
         left: -15px;
         right: 15px;
@@ -268,6 +270,7 @@ img {
         bottom: 15px;
         transition-duration: 0.3s;
         z-index: 10;
+        height: 470px;
     }
 
     .team-list-item:hover .team-modal{
@@ -389,6 +392,8 @@ img {
         font-style: italic;
         text-align: center;
     }
+
+    /* footer*/
 
     .site-foot {
         min-height: 63px;

@@ -38,7 +38,6 @@ ul{
 .site-logo {
     display: inline-block;
     width: 82px;
-    /* height: 23px; */
     vertical-align: middle;
 }
 
@@ -46,7 +45,6 @@ ul{
     display: inline-block;
     width: 1000px;
     text-align: right;
-    /* width: 475px; */
     margin: 0;
     margin-top: 5px;
     padding: 0;
@@ -99,9 +97,6 @@ li.menu-blog {
 
 /* SLIDER */
 
-.div.container.slider-wrapper {
-    width: 1600px;
-}
 
 .slider-wrapper {
     position: relative;
@@ -143,14 +138,10 @@ li.menu-blog {
 }
 
 .container {
-    max-width: 1170px;
     margin: auto;
     padding: 0 15px;
 }
 
-.div.container.slider {
-    max-width: 1170px;
-}
 
 /* BUTTON */
 
