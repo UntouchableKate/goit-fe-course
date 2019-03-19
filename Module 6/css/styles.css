@@ -255,8 +255,8 @@ img {
     }
 
     .team-img-wrp {
-        position: absolute;
-        transition: all 0.5s linear;
+        position: relative;
+        transition: all 0.5s;
     }
 
     .img-backgr {
@@ -267,8 +267,6 @@ img {
         z-index: -2;
     }
 
-   
-
     .team-list-item:hover .team-img {
         transform: translate(-15px,-15px);
     }
@@ -277,11 +275,11 @@ img {
     .team-modal {
         position: absolute;
         opacity: 0;
-        left: -15px;
-        right: 15px;
-        top: -15px;
-        bottom: 15px;
-        transition-duration: 0.5s;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition-duration: all 0.5s;
         z-index: 10;
         height: 470px;
     }
@@ -290,6 +288,11 @@ img {
         background: rgb(228,204,127);
         background: linear-gradient(0deg, rgba(228,204,127,1) 0%, rgba(239,139,138,1) 100%);
         opacity: 0.8;
+        left: -15px;
+        right: 15px;
+        top: -15px;
+        bottom: 15px;
+        z-index: 10;
     }
 
     .team-icon {
@@ -299,7 +302,7 @@ img {
         width: 224px;
         left: 24px;
         top: 186px;
-        transition-duration: 0.3s;
+        /* transition: all 0.5s; */
 
     }
 
@@ -311,6 +314,7 @@ img {
         height: var(--s);
         width: var(--s);
         cursor: pointer;
+        transition: all 0.3s;
     }
 
     .link-icon:hover{
@@ -366,17 +370,6 @@ img {
 
     .link-instagram {
         left: 223px;
-    }
-
-    .link-icon:hover{
-        background: #95E1D3;
-        border: none;
-        display: block;
-    }
-
-    .team-img-wrapper:hover .team-icon {
-        display: block;
-        opacity: 1;
     }
 
     .team-txt {
