@@ -267,6 +267,10 @@ img {
         z-index: -2;
     }
 
+    .team-img {
+        transition: all 0.3s;
+    }
+
     .team-list-item:hover .team-img {
         transform: translate(-15px,-15px);
     }
@@ -279,7 +283,7 @@ img {
         right: 0;
         top: 0;
         bottom: 0;
-        transition-duration: all 0.5s;
+        transition: all 0.3s;
         z-index: 10;
         height: 470px;
     }
