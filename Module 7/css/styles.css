@@ -1,0 +1,354 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+    *, *::before, *::after {
+    box-sizing: inherit;
+    }
+
+  /* montserrat-500 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+         url('/fonts/montserrat-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/fonts/montserrat-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+  /* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('/fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/fonts/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* montserrat-600 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+         url('../fonts/montserrat-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+@font-face {
+    font-family: 'DroidSerif';
+    font-style: italic;
+    font-weight: normal;
+    src: url('/fonts/DroidSerif-Italic-webfont.woff') format('woff');
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-slab-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+    :root {
+        --col: 145px;
+        --beet: 35px;
+        --menu: 97px;
+        --mus: #FDD135;
+        --text: #777777;
+        --title: #222222;
+        --font-m: "Montserrat", sans-serif;
+        --font-d: "Droid Serif", sans-serif;
+        --font-s: "Roboto Slad", sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+    }
+
+    /* navigation */
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 50px;
+        padding-bottom: 110px;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+}
+
+    .col-1 {
+        width: var(--col);
+}
+
+
+    .site-navigation {
+        display: flex;
+        width: calc(var(--menu) * 5);
+        justify-content: space-between;
+}
+
+    .site-navigation a{
+        color: var(--title);
+        font-family: var(--font-m);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .site-navigation a:hover,
+    .site-navigation a:focus {
+        color: var(--mus);
+    }
+
+    /* services section */
+
+    .services {
+        margin-bottom: 102px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 40px;
+        color: var(--title);
+        font-family: var(--font-m);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: var(--text);
+        font-family: var(--font-d);
+        font-style: italic;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 70px;
+    }
+
+    .services-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        /* height: 232px; */
+    }
+
+    .services-list-item {
+        width: calc(var(--col) * 2);
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        flex-grow: 0;
+        flex-shrink: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .services-list-item::before{
+        content: '';
+        display: block;
+        /* width: calc(var(--col) * 2); */
+        width: 66px;
+        height: 66px;
+        border-radius: 33px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 3px solid var(--mus);
+        margin: 0 105px 20px;
+    }
+
+    .icon-basket::before {
+        background-image: url(../img/icon-basket.png);
+    }
+
+    .icon-laptop::before {
+        background-image: url(../img/icon-laptop.png);
+    }
+
+    .icon-locked::before {
+        background-image: url(../img/icon-locked.png);
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .serv-title {
+        font-family: var(--font-m);
+        font-size: 18px;
+        color: var(--title);
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .serv-text-descr {
+        font-family: var(--font-s);
+        font-size: 14px;
+        color: var(--text);
+        font-weight: normal;
+        line-height: 24px;
+    }
+
+    .tcont {
+        color: #FFFFFF;
+        padding-top: 102px;
+    }
+
+    /* form section */
+
+    /* .img-wrp {
+        background-image: url(../img/map.png);
+        min-height: 676px;
+    } */
+
+    .img-map {
+        background-image: url(../img/map.png);
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+        min-height: 676px;
+    }
+
+    .img-wrp {
+        min-height: 676px;
+        background: var(--title);
+        z-index: -5;
+    }
+
+    /* .form-section {
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: var(--font-m);
+    color: #BBBBBB;
+    padding-left: 16px;
+    font-weight: 600;
+    } */
+
+    .form-section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fillable-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        height: 53px;
+    }
+
+    .form-input,
+    .textarea {
+        box-sizing: border-box;
+        width: 455px;
+        display: block;
+        outline: 3px solid transparent;
+        outline-offset: -2px;
+        transition: outline-color 0.1s;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: var(--font-m);
+        color: #BBBBBB;
+        padding-left: 16px;
+        font-weight: 600;
+    }
+
+    .form-name {
+        margin-bottom: 27px;
+    }
+
+    .form-email {
+        margin-bottom: 27px;
+    }
+
+    .form-subj {
+        margin-bottom: 29px;
+    }
+
+    .textarea {
+        padding-top: 16px;
+        margin-bottom: 29px;
+    }
+
+
+    .form-name:focus:invalid,
+    .form-email:focus:invalid,
+    .textarea:focus:invalid {
+        outline-color: red;
+        transition: outline-color 5s;
+    }
+
+    .form-name:focus:valid,
+    .form-email:focus:valid,
+    .textarea:focus:valid {
+        outline-color: green;
+        transition: outline-color .4s;
+    }
+
+    .form-submit {
+        width: 240px;
+        height: 65px;
+        border: none;
+        background-color: var(--mus);
+        color: #FFFFFF;
+        font-family: var(--font-m);
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .form-submit:hover {
+        transform: scale(1.04);
+        box-shadow: inset 0 0 10px #000000;
+}
