@@ -1,0 +1,270 @@
+@import url(../css/font-face.css);
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+  :root {
+      --font-m: "Monserrat", sans-serif;
+      --font-r: "Roboto Slab", sans-serif;
+      --red: #FF4E50;
+      --white: #ffffff;
+      --tblack: #333333;
+  }
+
+
+/* =========== header ===========*/
+
+.wrapper-fluid {
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 540px;
+    background-size: cover;
+    background-attachment: local;
+}
+
+.wrapper {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.find-part {
+    padding-bottom: 7.7rem;
+    margin-bottom: 3.8rem;
+}
+
+.page-header {
+    padding-top: 1.3rem;
+    padding-bottom: 2.5rem;
+}
+
+.login-menu a {
+    font-family: var(--font-m);
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1rem;
+    padding: .5rem 1.07rem;
+    border: 1.5px solid transparent;
+}
+
+.login-menu a:hover,
+.login-menu a:focus {
+    border: 1.5px solid;
+    border-radius: 20px;
+
+}
+
+
+.login-menu {
+    text-align: center;
+    padding-bottom: 8rem;
+}
+
+.company-link {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* ============== section 1 ========= */
+
+
+.link-name {
+    font-family: var(--font-m);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.main-title {
+    text-align: center;
+    overflow-wrap: break-word;
+    color: var(--white);
+}
+
+.title {
+    font-family: var(--font-m);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+.subtitle {
+    font-family: var(--font-r);
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* =========== button (1) ========== */
+
+.button {
+    text-align: center;
+    font-family: var(--font-m);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.button-all {
+    padding: 0.8rem 3.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+.button--red {
+    color: var(--white);
+    background-color: var(--red);
+    border: 2px solid var(--red);
+}
+
+.button--red:focus,
+.button--red:hover {
+    color: var(--red);
+    background-color: var(--white);
+    border: 2px solid var(--red);
+}
+
+/* =============== section 2 ============== */
+
+.partner {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.partner-list {
+    margin-bottom: 2rem;
+}
+
+.title-partner {
+    font-family: var(--font-m);
+    font-weight: 700;
+    color: var(--tblack);
+    font-size: 1.2rem;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+ .partner-list-item {
+    position: relative;
+    padding-bottom: 28px;;
+    max-width: 236px;
+    margin: 0 auto;
+}
+
+.img-wrp {
+    position: relative;
+}
+
+
+.partner-img {
+    margin: 0 auto;
+    border-radius: 70px;
+    position: relative;
+}
+
+
+.modal-icon::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+}
+
+
+.icon-tv::before {
+    background-image: url(../images/icon-tv.png);
+}
+.icon-chemical::before {
+    background-image: url(../images/icon-chemical.png);
+}
+.icon-tea::before {
+    background-image: url(../images/icon-tea.png);
+}
+.icon-fly::before {
+    background-image: url(../images/icon-fly.png);
+}
+
+.icon {
+    position: absolute;
+    left: 57%;
+    bottom: 34%;
+}
+
+.icon-chemical {
+    position: absolute;
+    bottom: 105px;
+}
+
+.icon-tea {
+    position: absolute;
+    bottom: 90px;
+}
+
+.txt-name {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: var(--font-m);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--tblack);
+    padding-top: 15px;
+}
+
+.txt-descr {
+   
+    margin: 0 auto;
+    padding: 0 .9rem;
+    font-family: var(--font-r);
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
+
+/* ================ button (2) ============ */
+
+.button--white {
+    color: var(--red);
+    background-color: var(--white);
+    border: 2px solid var(--red);
+}
+
+.button--white:focus,
+.button--white:hover {
+    color: var(--white);
+    background-color: var(--red);
+    border: 2px solid var(--red);
+}
