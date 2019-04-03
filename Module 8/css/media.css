@@ -5,7 +5,7 @@
     }
 
     .wrapper {
-        min-width: 748px;
+        max-width: 748px;
     }
 
     .find-part {
@@ -104,7 +104,7 @@
     }
 
     .wrapper {
-        min-width: 940px;
+        max-width: 960px;
     }
 
     .partner-list-item {
