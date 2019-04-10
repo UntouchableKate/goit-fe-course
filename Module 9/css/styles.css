@@ -1,0 +1,340 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+.container-fluid {
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 540px;
+}
+
+.typography-Rob {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.typography-Mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-menu a {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 1rem;
+    padding: .5rem 1.07rem;
+    border: 1.5px solid transparent;
+}
+
+.login-menu a:hover,
+.login-menu a:focus {
+    border: 1.5px solid #ffffff;
+    border-radius: 20px;
+
+}
+
+.login-menu {
+    text-align: center;
+    padding-bottom: 7rem;
+}
+
+.login-link {
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+
+
+/* ============== section 1 ========= */
+
+.logo-wrp {
+    padding-bottom: 1.8rem;
+}
+
+.link-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+
+.main-title {
+    color: #ffffff !important;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+/* =========== button (1) ========== */
+
+.btn-wrp {
+    font-weight: 700;
+    font-size: 0.8rem !important;
+}
+
+.btn {
+    padding: 0.7rem 3rem !important;
+    border: none;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.8s ease !important;
+}
+
+.btn--red {
+    color: var(--white);
+    background-color: #FF4E50;
+    border: 2px solid #FF4E50;
+}
+
+.btn--red:focus,
+.btn--red:hover {
+    color: var(--red);
+    background-color: #ffffff;
+    border: 2px solid #FF4E50;
+}
+
+/* =============== section 2 ============== */
+
+.title--partner {
+    font-size: 1.3rem;
+}
+
+.card {
+    max-width: 15rem;
+    margin: 0 15px 30px;
+}
+
+.cards {
+    margin-bottom: 1.8rem;
+}
+
+.card-link:hover {
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+}
+
+.card-link {
+    cursor: pointer;
+}
+
+.card-img {
+    position: relative;
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.modal-icon::before {
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+}
+
+.icon-tv::before {
+    background-image: url(../images/icon-tv.png);
+}
+.icon-chemical::before {
+    background-image: url(../images/icon-chemical.png);
+}
+.icon-tea::before {
+    background-image: url(../images/icon-tea.png);
+}
+.icon-fly::before {
+    background-image: url(../images/icon-fly.png);
+}
+
+.icon {
+    position: absolute;
+    left: 57%;
+    bottom: 38%;
+}
+
+.icon-chemical {
+    position: absolute;
+    bottom: 100px;
+}
+
+.icon-tea {
+    position: absolute;
+    bottom: 80px;
+}
+
+.card-images {
+    margin-bottom: 1.3rem;
+}
+
+.card-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* ================ button (2) ============ */
+
+.btn--white {
+    color: #FF4E50;
+    background-color: #ffffff;
+    border: 2px solid #FF4E50 !important;
+    margin-bottom: 58px;
+}
+
+.btn--white:focus,
+.btn--white:hover {
+    color: #ffffff;
+    background-color: #FF4E50;
+    border: 2px solid #FF4E50;
+}
+
+
+
+@media (min-width: 768px) {
+    .container-fluid {
+        height: 700px;
+        background-image: url(../images/header-bg@tablet.jpg);
+    }
+
+    .container {
+        max-width: 748px;
+    }
+
+    .card {
+        max-width: 14.75rem;
+        margin: 0 0.8rem 3rem;
+        padding-bottom: 0;
+    }
+
+    .cards {
+        margin-bottom: 1rem;
+    }
+
+    .login-menu {
+        padding-bottom: 6.4rem;
+    }
+
+/* ============== section 1 ========= */
+
+    .title {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .subtitle {
+        font-size: 1.6rem;
+        margin-bottom: 2.2rem !important;
+    }
+
+/* =========== button (1) ========== */
+
+    .btn {
+        padding: .5rem 1.6rem;
+    }
+
+/* =============== section 2 ============== */
+
+    .title--partner {
+        font-size: 1.3rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .icon {
+        position: absolute;
+        left: 61%;
+        bottom: 40%;
+    }
+    
+    .icon-chemical {
+        position: absolute;
+        bottom: 50%;
+    }
+    
+    .icon-fly {
+        position: absolute;
+        bottom: 48%;
+    }
+
+    }
+
+@media (min-width: 960px) {
+    .container-fluid {
+        height: 700px;
+        background-image: url(../images/header-bg@desktop.jpg);
+    }
+
+    .container {
+        max-width: 960px !important;
+    }
+
+    .card {
+        max-width: 220px !important;
+        margin: 0 0.5rem;
+        padding: 0 1rem 0;
+    }
+
+
+    .title {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card {
+        max-width: 13.75rem;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    .title--partner {
+        font-size: 1.3rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .icon-tea {
+        position: absolute;
+        bottom: 48%;
+    }
+    
+    .icon-tv {
+        position: absolute;
+        bottom: 48%;
+}
