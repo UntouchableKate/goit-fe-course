@@ -114,7 +114,7 @@ img {
 
     .container-fluid {
         height: 1000px;
-        background-image: url(/img/eagle.png);
+        background-image: url(../img/eagle.png);
         background-position: center;
         background-size: cover;
         z-index: -10;
@@ -699,7 +699,7 @@ img {
         }
 
         .container-fluid {
-        background-image: url(/img/eagle@2x.png);
+        background-image: url(../img/eagle@2x.png);
 
         }
       }
