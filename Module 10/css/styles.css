@@ -16,22 +16,6 @@ img {
     /* height: auto; */
 }
 
-/* .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    }
-    *, *::before, *::after {
-    box-sizing: inherit;
-    } */
-
     /* montserrat-regular - latin */
 @font-face {
     font-family: 'Montserrat';
@@ -117,18 +101,15 @@ img {
         background-image: url(../img/eagle.png);
         background-position: center;
         background-size: cover;
-        z-index: -10;
     }
 
-    .container-fluid--gradient {
+    .container-fluid-gradient {
         height: 1000px;
         background: rgb(228,204,127);
-        background: -webkit-gradient(linear, left bottom, left top, from(rgba(228,204,127,1)), to(rgba(239,139,138,1)));
         background: -webkit-linear-gradient(bottom, rgba(228,204,127,1) 0%, rgba(239,139,138,1) 100%);
         background: -o-linear-gradient(bottom, rgba(228,204,127,1) 0%, rgba(239,139,138,1) 100%);
         background: linear-gradient(0deg, rgba(228,204,127,1) 0%, rgba(239,139,138,1) 100%);
         opacity: .9;
-        z-index: 10;
     }
 
     .header {
@@ -161,33 +142,29 @@ img {
         width: var(--cl);
     }
 
-    .header-navigation__site-navigation {
+    .menu-nav {
         width: calc(var(--cl) * 5);
-    }
-
-
-    .site-navigation {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     }
 
-    .header-navigation__link:hover,
-    .header-navigation__link:focus {
+    .menu-nav__link:hover,
+    .menu-nav__link:focus {
         color: #FCE38A;
 }
 
-    .header-navigation__link {
+    .menu-nav__link {
         color: #fff;
         font-family: var(--mont);
         font-weight: 400;
 
 }
 
-    .header-navigation__link::after {
+    .menu-nav__link::after {
         content: '';
         display: block;
         height: 6px;
@@ -198,37 +175,31 @@ img {
         transition: all 0.3s linear;
     }
 
-    .header-navigation__link:hover {
+    .menu-nav__link:hover {
         color: #FCE38A;
     }
 
-    .header-navigation__link:hover::after{
+    .menu-nav__link:hover::after{
         width: 100%;
     }
 
-    .subtitle {
+    .introductory-text__subtitle {
         font-family: 'Kaushan Script', cursive;
         font-weight: 400;
         text-align: center;
-    }
-
-    .title {
-        font-weight: 700;
-        text-align: center;
-        font-family: var(--mont);
-    }
-
-    .introductory-text__subtitle {
         color: #fff;
         font-size: 72px;
     }
 
-    .introductory-text__title{
+    .introductory-text__title {
+        font-weight: 700;
+        text-align: center;
+        font-family: var(--mont);
         color: #fff;
         font-size: 150px;
     }
 
-    .introductory-input {
+    .introductory-text__form {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -237,7 +208,7 @@ img {
                 justify-content: center;
     }
 
-    .introductory-input__submit {
+    .introductory-text__input {
         background-color: rgba(0,0,0,0);
         border: 3px solid #ffffff;
         color: #fff;
@@ -246,7 +217,7 @@ img {
         transition: all linear .5s;
     }
 
-    .introductory-input__submit:hover {
+    .introductory-text__input:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
@@ -254,10 +225,19 @@ img {
 
 /*services */
 
-    .services__title {
+    .services__title, .team__title  {
         font-size: 24px;
         color: var(--text);
-        }
+        font-weight: 700;
+        text-align: center;
+        font-family: var(--mont);
+    }
+
+    .services__subtitle, .team__subtitle {
+        font-family: 'Kaushan Script', cursive;
+        font-weight: 400;
+        text-align: center;
+    }
 
 
 
@@ -271,7 +251,7 @@ img {
     }
 
 
-    .services__list {
+    .services-card {
         list-style: none;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -285,7 +265,7 @@ img {
         padding: 0;
     }
 
-    .services-list__item {
+    .services-card__item {
         width: calc(var(--cl) * 4);
         display: -webkit-box;
         display: -ms-flexbox;
@@ -307,7 +287,7 @@ img {
         text-align: left;
     }
 
-    .services-list__item::before{
+    .services-card__item::before{
         content: '';
         display: block;
         width: var(--col);
@@ -317,52 +297,46 @@ img {
         background-size: contain;
     }
 
-    .services__icon-alarm::before  {
+    .services-card__item--icon-alarm::before  {
         background-image: url(../img/icon-services/alarm.png);
     }
 
-    .services__icon-graph::before {
+    .services-card__item--icon-graph::before {
         background-image: url(../img/icon-services/line-graph.png);
     }
 
-    .services__icon-computer::before {
+    .services-card__item--icon-computer::before {
         background-image: url(../img/icon-services/computer.png);
     }
 
-    .services__icon-book::before {
+    .services-card__item--icon-book::before {
         background-image: url(../img/icon-services/book.png);
     }
 
-    .services__icon-home::before {
+    .services-card__item--icon-home::before {
         background-image: url(../img/icon-services/home.png);
     }
 
-    .services__icon-image::before {
+    .services-card__item--icon-image::before {
         background-image: url(../img/icon-services/image.png);
     }
 
-    .services-list__text {
-        margin: 0;
-
-    }
-
-    .services-list__title{
+    .description-card__title{
         font-size: 14px;
         color: var(--text);
         font-family: var(--mont);
         font-weight: 400;
-        margin: 0 0 15px calc((14px * 1.5 - 14px) / 2)
+        margin: 0 0 15px 3px;
     }
 
-    .services-list__text-descrip {
-        width: calc(var(--cl) * 3);
+    .description-card__text {
+        width: 300px;
         font-size: 15px;
         line-height: 24px;
         color: var(--text-light);
         font-weight: 100;
-        font-family: 'Kaushan Script', cursive;
-        font-family: 'Montserrat', sans-serif;
         font-family: 'Roboto', sans-serif;
+        margin: 0;
     }
 
     /* team section*/
@@ -602,7 +576,7 @@ img {
         color: #F38181;
     }
 
-    .form-footer {
+    .footer__form {
         font-size: 0;
         vertical-align: middle;
       }
@@ -629,7 +603,7 @@ img {
         padding-left: 1rem;
       }
 
-      .footer__submit {
+      .footer__form--submit {
         background: var(--main);
         color: #fff;
         border: none;
@@ -638,7 +612,7 @@ img {
         transition: all linear .5s;
       }
 
-      .footer__submit:hover {
+      .footer__form--submit:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
@@ -674,27 +648,27 @@ img {
 
 
       @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .services__icon-alarm::before  {
+        .services-card__item--icon-alarm::before  {
             background-image: url(../img/icon-services/alarm@2x.png);
         }
 
-        .services__icon-graph::before {
+        .services-card__item--icon-graph::before {
             background-image: url(../img/icon-services/line-graph@2x.png);
         }
 
-        .services__icon-computer::before {
+        .services-card__item--icon-computer::before {
             background-image: url(../img/icon-services/computer@2x.png);
         }
 
-        .services__icon-book::before {
+        .services-card__item--icon-book::before {
             background-image: url(../img/icon-services/book@2x.png);
         }
 
-        .services__icon-home::before {
+        .services-card__item--icon-home::before {
             background-image: url(../img/icon-services/home@2x.png);
         }
 
-        .services__icon-image::before {
+        .services-card__item--icon-image::before {
             background-image: url(../img/icon-services/image@2x.png);
         }
 
