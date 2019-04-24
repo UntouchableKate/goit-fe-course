@@ -1,0 +1,130 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /* height: auto; */
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ====================NAV===============*/
+
+.container-fluid {
+    height: 1000px;
+    background-image: url(../images/eagle.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &::after {
+        content: '';
+            background: $gradient;
+            background: $linearGradient;
+            position: absolute;
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            }
+}
+
+.header {
+    @extend %flex;
+    align-items: baseline;
+    padding-bottom: 49px;
+    padding-top: 36px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.logo {
+    width: $slot;
+
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu-nav {
+    width: $slot * 5;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        color: #fff;
+        font-family: $mont;
+        font-weight: 400;}
+            &__link:hover,
+            &__link:focus {
+                color: $sand;}
+            &__link::after {
+                content: '';
+                display: block;
+                height: 6px;
+                width: 0;
+                border-bottom: 3px solid $sand;
+                transition: all 0.3s linear;}
+            &__link:hover {
+                color: $sand;}
+            &__link:hover::after{width: 100%;}
+}
+
+.introductory-text__subtitle {
+    @include small-title;
+    color: #fff;
+    font-size: 72px;
+    position: relative;
+    z-index: 2;
+}
+
+.introductory-text__title{
+    @include large-title;
+    color: #fff;
+    font-size: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.introductory-text__form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.introductory-text__input {
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #ffffff;
+    color: #fff;
+    transition: $trans;
+    &:hover {
+    transform: scale(1.2);
+    position: relative;
+    z-index: 2;}
+}

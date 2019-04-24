@@ -1,0 +1,17 @@
+@mixin large-title {
+    font-weight: 700;
+    text-align: center;
+    font-family: $mont;
+}
+
+@mixin small-title {
+    font-family: $kaush;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+%flex {
+    display: flex;
+    justify-content: space-between;
+}

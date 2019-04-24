@@ -1,0 +1,30 @@
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .services-card__item--icon-alarm::before  {
+        background-image: url(../images/icon-services/alarm@2x.png);
+    }
+
+    .services-card__item--icon-graph::before {
+        background-image: url(../images/icon-services/line-graph@2x.png);
+    }
+
+    .services-card__item--icon-computer::before {
+        background-image: url(../images/icon-services/computer@2x.png);
+    }
+
+    .services-card__item--icon-book::before {
+        background-image: url(../images/icon-services/book@2x.png);
+    }
+
+    .services-card__item--icon-home::before {
+        background-image: url(../images/icon-services/home@2x.png);
+    }
+
+    .services-card__item--icon-image::before {
+        background-image: url(../images/icon-services/image@2x.png);
+    }
+
+    .container-fluid {
+    background-image: url(../images/eagle@2x.png);
+
+    }
+  }

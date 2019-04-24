@@ -1,0 +1,90 @@
+.services__title {
+    font-size: 24px;
+    color: $darkgrey;
+    @include large-title;
+}
+
+.services__subtitle {
+    @include small-title;
+}
+
+.title--underline::after {
+    content: '';
+    display: block;
+    background: $peach;
+    margin: 38px auto 62px;
+    width: 60px;
+    height: 3px;
+}
+
+
+.services-card {
+    @extend %flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.services-card__item {
+    width: $slot * 4;
+    @extend %flex;
+    align-items: flex-start;
+    height: 125px;
+    padding: 0 10px;
+    margin: 40px 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.services-card__item::before{
+    content: '';
+    display: block;
+    width: $col;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.services-card__item--icon-alarm::before  {
+    background-image: url(../images/icon-services/alarm.png);
+}
+
+.services-card__item--icon-graph::before {
+    background-image: url(../images/icon-services/line-graph.png);
+}
+
+.services-card__item--icon-computer::before {
+    background-image: url(../images/icon-services/computer.png);
+}
+
+.services-card__item--icon-book::before {
+    background-image: url(../images/icon-services/book.png);
+}
+
+.services-card__item--icon-home::before {
+    background-image: url(../images/icon-services/home.png);
+}
+
+.services-card__item--icon-image::before {
+    background-image: url(../images/icon-services/image.png);
+}
+
+.description-card__title{
+    font-size: 14px;
+    color: $darkgrey;
+    font-family: $mont;
+    font-weight: 400;
+    margin: 0 0 15px 3px;
+}
+
+.description-card__text {
+    width: $slot * 3;
+    font-size: 15px;
+    line-height: 24px;
+    color: $lightgrey;
+    font-weight: 100;
+    font-family: $Rob;
+    margin: 0;
+}

@@ -1,0 +1,61 @@
+.footer {
+    min-height: 63px;
+    border-top: 0.5px solid #e5e5e5;
+    @extend %flex;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+
+
+.footer__text {
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: $mont;
+    color: $darkgrey;
+}
+
+.footer__text-red {
+    color: $peach;
+}
+
+.foooter__form {
+    font-size: 0;
+    vertical-align: middle;
+  }
+
+  .submit {
+    font-size: 16px;
+    box-shadow: none;
+    vertical-align: middle;
+    width: 152px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: $mont;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .footer__email {
+    width: 230px;
+    height: 40px;
+    border: 1px solid $solightgrey;
+    box-sizing: border-box;
+    padding-left: 1rem;
+  }
+
+  .footer__form--submit {
+    background: $aquamarine;
+    color: #fff;
+    border: none;
+    transition: $trans;
+    &:hover {
+        transform: scale(1.2);}
+  }
+
+  input::placeholder {
+    color:$solightgrey;
+    font-family: $Rob;
+    font-style: italic;
+    font-size: 15px;
+  }
